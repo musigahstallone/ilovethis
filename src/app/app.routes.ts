@@ -6,6 +6,17 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
 import { CartComponent } from './pages/cart/cart.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { AuthComponent } from './pages/auth/auth.component';
+import { inject } from '@angular/core';
+import { AuthService } from './services/auth.service';
+
+const canActivate = () => {
+  const authService = inject(AuthService);
+  if (!authService.isLoggedIn()) {
+    window.alert('Please login first');
+    return false;
+  }
+  return true;
+};
 
 export const appRoutes: Routes = [
   {
@@ -27,11 +38,13 @@ export const appRoutes: Routes = [
     path: 'cart',
     component: CartComponent,
     title: 'Shopping Cart',
+    canActivate: [canActivate],
   },
   {
     path: 'checkout',
     component: CheckoutComponent,
     title: 'Checkout',
+    canActivate: [canActivate],
   },
   {
     path: 'auth',
