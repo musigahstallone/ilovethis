@@ -46,7 +46,7 @@ import { Component } from '@angular/core';
                   class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1"
                 >
                   <img
-                    src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg"
+                    src="https://images.pexels.com/photos/32278975/pexels-photo-32278975/free-photo-of-majestic-gelada-baboon-posing-in-nature.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
                     alt="Collection"
                     class="w-full h-full object-center object-cover"
                   />
@@ -67,7 +67,7 @@ import { Component } from '@angular/core';
                   class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1"
                 >
                   <img
-                    src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg"
+                    src="https://images.pexels.com/photos/32278975/pexels-photo-32278975/free-photo-of-majestic-gelada-baboon-posing-in-nature.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
                     alt="Collection"
                     class="w-full h-full object-center object-cover"
                   />
@@ -88,7 +88,7 @@ import { Component } from '@angular/core';
                   class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1"
                 >
                   <img
-                    src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg"
+                    src="https://images.pexels.com/photos/32278975/pexels-photo-32278975/free-photo-of-majestic-gelada-baboon-posing-in-nature.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
                     alt="Collection"
                     class="w-full h-full object-center object-cover"
                   />

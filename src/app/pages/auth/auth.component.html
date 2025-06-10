@@ -1,72 +1,100 @@
-<div class="min-h-screen flex items-center justify-center bg-gray-100">
-  <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-    <div class="flex justify-between">
-      <button id="login-toggle" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline active">Login</button>
-      <button id="register-toggle" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Register</button>
+<div
+  class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 to-blue-50 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-md w-full space-y-8 bg-white shadow-2xl rounded-lg p-8">
+    <div class="text-center">
+      <h1 class="text-3xl font-extrabold text-gray-900 mb-8">Welcome</h1>
+      <div class="flex justify-center space-x-4 mb-6">
+        <button id="login-toggle"
+          class="flex-1 bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 active">Login</button>
+        <button id="register-toggle"
+          class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-all duration-200">Register</button>
+      </div>
     </div>
 
-    <div id="login-section" class="auth-section mt-4">
-      <h2 class="text-center text-gray-700 text-xl font-bold mb-4">Login</h2>
-      <form>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="login-email">
+    <div id="login-section" class="auth-section space-y-6">
+      <form class="mt-8 space-y-6">
+        <div>
+          <label class="block text-gray-700 text-sm font-semibold mb-2" for="login-email">
             Email or Username
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="login-email" type="text" placeholder="Email or Username">
+          <input
+            class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm transition-all duration-200"
+            id="login-email" type="text" placeholder="Enter your email or username">
         </div>
-        <div class="mb-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="login-password">
+        <div>
+          <label class="block text-gray-700 text-sm font-semibold mb-2" for="login-password">
             Password
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="login-password" type="password" placeholder="Password">
+          <input
+            class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm transition-all duration-200"
+            id="login-password" type="password" placeholder="Enter your password">
         </div>
         <div class="flex items-center justify-between">
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-            Sign In
-          </button>
-          <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+          <div class="flex items-center">
+            <input id="remember-me" type="checkbox"
+              class="h-4 w-4 text-blue-500 focus:ring-blue-500 border-gray-300 rounded cursor-pointer">
+            <label for="remember-me" class="ml-2 block text-sm text-gray-700 cursor-pointer">
+              Remember me
+            </label>
+          </div>
+          <a class="text-sm font-semibold text-blue-500 hover:text-blue-700 transition-colors duration-200" href="#">
             Forgot Password?
           </a>
+        </div>
+        <div>
+          <button type="submit"
+            class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-semibold rounded-lg text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200">
+            Sign In
+          </button>
         </div>
       </form>
     </div>
 
-    <div id="register-section" class="auth-section hidden mt-4">
-      <h2 class="text-center text-gray-700 text-xl font-bold mb-4">Register</h2>
-      <form>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="register-email">
+    <div id="register-section" class="auth-section hidden space-y-6">
+      <form class="mt-8 space-y-6">
+        <div>
+          <label class="block text-gray-700 text-sm font-semibold mb-2" for="register-email">
             Email
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="register-email" type="email" placeholder="Email">
+          <input
+            class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm transition-all duration-200"
+            id="register-email" type="email" placeholder="Enter your email">
         </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="register-username">
+        <div>
+          <label class="block text-gray-700 text-sm font-semibold mb-2" for="register-username">
             Username
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="register-username" type="text" placeholder="Username">
+          <input
+            class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm transition-all duration-200"
+            id="register-username" type="text" placeholder="Choose a username">
         </div>
-        <div class="mb-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="register-password">
+        <div>
+          <label class="block text-gray-700 text-sm font-semibold mb-2" for="register-password">
             Password
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="register-password" type="password" placeholder="Password">
+          <input
+            class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm transition-all duration-200"
+            id="register-password" type="password" placeholder="Create a password">
         </div>
-        <div class="mb-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="register-confirm-password">
+        <div>
+          <label class="block text-gray-700 text-sm font-semibold mb-2" for="register-confirm-password">
             Confirm Password
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="register-confirm-password" type="password" placeholder="Confirm Password">
+          <input
+            class="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm transition-all duration-200"
+            id="register-confirm-password" type="password" placeholder="Confirm your password">
         </div>
-        <div class="flex items-center justify-center">
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-            Register
+        <div>
+          <button type="submit"
+            class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-semibold rounded-lg text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200">
+            Create Account
           </button>
         </div>
       </form>
     </div>
   </div>
 </div>
+
 <script>
   const loginToggle = document.getElementById('login-toggle');
   const registerToggle = document.getElementById('register-toggle');
@@ -76,14 +104,18 @@
   loginToggle.addEventListener('click', () => {
     loginSection.classList.remove('hidden');
     registerSection.classList.add('hidden');
-    loginToggle.classList.add('active');
-    registerToggle.classList.remove('active');
+    loginToggle.classList.add('active', 'bg-blue-500', 'text-white');
+    loginToggle.classList.remove('bg-gray-100', 'text-gray-800');
+    registerToggle.classList.remove('active', 'bg-blue-500', 'text-white');
+    registerToggle.classList.add('bg-gray-100', 'text-gray-800');
   });
 
   registerToggle.addEventListener('click', () => {
     registerSection.classList.remove('hidden');
     loginSection.classList.add('hidden');
-    registerToggle.classList.add('active');
-    loginToggle.classList.remove('active');
+    registerToggle.classList.add('active', 'bg-blue-500', 'text-white');
+    registerToggle.classList.remove('bg-gray-100', 'text-gray-800');
+    loginToggle.classList.remove('active', 'bg-blue-500', 'text-white');
+    loginToggle.classList.add('bg-gray-100', 'text-gray-800');
   });
 </script>
